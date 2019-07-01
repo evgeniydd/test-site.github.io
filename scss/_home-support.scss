@@ -1,0 +1,43 @@
+#home-support {
+  width: 100%;
+  background-color: $primary-color;
+  background-image: url(/img/slider-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  h1 {
+    padding-top: 50px;
+  }
+
+  .slideshow {
+    .slider {
+      margin: 0 auto;
+      bottom: -70px;
+      position: relative;
+      z-index: 1;
+      height: auto;
+      max-width: 700px;
+
+      .slider-track {
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+      }
+
+      .slide-img {
+        position: relative;
+        z-index: 1;
+
+        img {
+          max-width: 100%;
+          border: 10px solid #fff;
+          transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+          transform: scale(1.2);
+        }
+
+        &.slick-active img {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

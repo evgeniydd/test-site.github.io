@@ -1,0 +1,85 @@
+// Basic Style
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  color: $text-color-white;
+  font-family: $lato;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  text-decoration: none;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+
+h1 {
+  color: $text-color-white;
+  font-family: $lato;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 900;
+}
+
+h2 {
+  color: $text-color-lighten-grey;
+  font-family: $lato;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+// Buttons
+
+.btn {
+  border: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 40px;
+  padding: 1rem 4rem;
+  background-color: $secondary-color;
+  text-transform: uppercase;
+  color: $text-color-white;
+  border-bottom: 10px solid darken($secondary-color, 10%);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: darken($secondary-color, 5%);
+  }
+
+  &.blue {
+    background-color: lighten($primary-color, 1%);
+    border-bottom: 10px solid darken($primary-color, 5%);
+
+    &:hover {
+      background-color: lighten($primary-color, 5%);
+    }
+  }
+}

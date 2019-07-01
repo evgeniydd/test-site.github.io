@@ -1,0 +1,59 @@
+footer {
+  text-align: center;
+  color: #b9b9b9;
+  padding: 60px 0 20px 0;
+
+  .menu {
+    margin-bottom: 50px;
+
+    ul {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  hr {
+    border: 2px solid #cccccc;
+    margin-bottom: 60px;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #999999;
+    margin: 30px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .dot {
+    display: inline-block;
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    background: #eeeeee;
+    margin: 15px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 20px;
+  }
+  .email {
+    font-weight: bold;
+    color: $secondary-color;
+  }
+
+  .down {
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid #eeeeee;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+}

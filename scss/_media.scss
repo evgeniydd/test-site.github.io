@@ -1,0 +1,96 @@
+@media screen and (max-width: 1180px) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  // Age Area
+  .age-content {
+    padding-top: 30px;
+    height: 500px;
+    width: 100%;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/age-bg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      width: 75%;
+      padding: 20px 0;
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+
+  // Join Area
+  #join {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 773px) {
+  // Banner Area
+  .home-banner-area {
+    .banner-inner {
+      display: flex;
+      justify-content: center;
+
+      .banner-content {
+        text-align: center;
+        margin-top: 100px;
+
+        h1 {
+          font-weight: 900;
+          padding: 20px 0;
+        }
+
+        p {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .age-content {
+    p {
+      text-align: center;
+      width: 80%;
+    }
+  }
+
+  .navbar {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 773px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 524px) {
+  footer a {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  footer li {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+}
